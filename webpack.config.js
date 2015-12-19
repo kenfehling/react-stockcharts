@@ -7,7 +7,7 @@ module.exports = {
 		app: "./src/index.js",
 	},
 	output: {
-		path: path.join(__dirname, "build/dist/"),
+		path: path.join(__dirname, "dist/"),
 		filename: "react-stockcharts.js",
 		publicPath: "dist/",
 		library: "ReStock",
