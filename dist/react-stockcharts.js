@@ -1,5 +1,14 @@
-var ReactStockcharts =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("React"), require("d3"));
+	else if(typeof define === 'function' && define.amd)
+		define(["React", "d3"], factory);
+	else if(typeof exports === 'object')
+		exports["ReStock"] = factory(require("React"), require("d3"));
+	else
+		root["ReStock"] = factory(root["React"], root["d3"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_5__) {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -310,7 +319,7 @@ var ReactStockcharts =
 /* 2 */
 /***/ function(module, exports) {
 
-	module.exports = React;
+	module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
 
 /***/ },
 /* 3 */
@@ -850,7 +859,7 @@ var ReactStockcharts =
 /* 5 */
 /***/ function(module, exports) {
 
-	module.exports = d3;
+	module.exports = __WEBPACK_EXTERNAL_MODULE_5__;
 
 /***/ },
 /* 6 */
@@ -13206,5 +13215,7 @@ var ReactStockcharts =
 	module.exports = exports["default"];
 
 /***/ }
-/******/ ]);
+/******/ ])
+});
+;
 //# sourceMappingURL=react-stockcharts.js.map
