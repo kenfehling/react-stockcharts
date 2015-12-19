@@ -1,14 +1,5 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("React"), require("d3"));
-	else if(typeof define === 'function' && define.amd)
-		define(["React", "d3"], factory);
-	else if(typeof exports === 'object')
-		exports["ReStock"] = factory(require("React"), require("d3"));
-	else
-		root["ReStock"] = factory(root["React"], root["d3"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_5__) {
-return /******/ (function(modules) { // webpackBootstrap
+var ReactStockcharts =
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -319,7 +310,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 2 */
 /***/ function(module, exports) {
 
-	module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
+	module.exports = React;
 
 /***/ },
 /* 3 */
@@ -859,7 +850,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 5 */
 /***/ function(module, exports) {
 
-	module.exports = __WEBPACK_EXTERNAL_MODULE_5__;
+	module.exports = d3;
 
 /***/ },
 /* 6 */
@@ -13215,7 +13206,5 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ }
-/******/ ])
-});
-;
+/******/ ]);
 //# sourceMappingURL=react-stockcharts.js.map
